@@ -6,7 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
     
+    table, th, td{
+        border-collapse: collapse;
+        border: 1px solid lightgray;
+        text-align: left;
+        padding: 10px;
+    }
+    th{
+        font-size: 15px;
+    }
+    td{
+        font-size: 12px;
+    }
+    :nth-of-type(even) td{
+        background-color: lightgray;
+    }
+    th:hover{
+        background-color: gray;
+    }
+    td:hover{
+        background-color: aqua;
+    }
+</style>
+<body>
+    <h1>Práctica 10. Zebra Stripped Table</h1>
+    <table class="stripped">
+        <tr>
+            <th>Nombre</th>
+            <th>Voltaje(V)</th>
+            <th>Corriente(mA)</th>
+        </tr>
+        <tr>
+            <td>Diodo Led</td>
+            <td>3'3v</td>
+            <td>20ma</td>
+        </tr>
+        <tr>
+            <td>Potenciometro</td>
+            <td>24v</td>
+            <td>100ma</td>
+        </tr>
+        <tr>
+            <td>Motor DC</td>
+            <td>12v</td>
+            <td>40ma</td>
+        </tr>
+        <tr>
+            <td>LDR</td>
+            <td>12v</td>
+            <td>100ma</td>
+        </tr>
+        <tr>
+            <td>Transistor NPN 2n2222</td>
+            <td>80v</td>
+            <td>100ma</td>
+        </tr>
+    </table>
 </body>
 </html>
